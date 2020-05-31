@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model TestMovieSite.Views.ViewModels.MovieViewModel
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<partial name="_MessagePanel" model="Model" />
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PublishingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PublishingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DownloaderName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DownloaderName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PosterUrl)
+        </dt>
+        <dd class = "col-sm-10">
+           <img style="max-width: 600px; max-height:400px" src="@Model.PosterUrl" alt="@Model.PosterUrl"/>
+        </dd>
+    </dl>
+</div>
+<div>
+     @if (Model.IsCurrentUserDownloader.HasValue && Model.IsCurrentUserDownloader.Value)
+     {
+         <span>
+            @Html.ActionLink("Edit", "Edit", new {id = Model.Id}) |
+            @Html.ActionLink("Delete", "Delete", new {id = Model.Id}) |   
+        </span>
+    }
+    <a asp-action="Index">Back to List</a>
+</div>

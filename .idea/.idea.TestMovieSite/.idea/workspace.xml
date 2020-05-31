@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1cf52ee-0513-4734-9e61-1c3ead1f84c0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Home/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Home/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9317EE-6760-4118-940A-47CA4ED65A50/23/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/ViewModels/MovieViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Helpers/OperationResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/ViewModels/MoviePageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Helpers/OperationResultHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/ViewModels/BaseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/ViewModels/PageAnswerViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/ViewModels/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/ViewModels/PageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB0398C5-D377-40C5-B9B0-886AACCEF622/12/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Storage/StorageType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Models/File.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/DTO/FileDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Models/Storage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Storage/StorageFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Storage/IStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Services/IMovieService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/TagHelpers/PageLinkTagHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AB1CA25A-5FB6-4BEE-A0AD-10A183B1358F/D/RazorPageBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0E47B3D8-5AF3-476E-A7AA-DC7A9CDD8833/7/ClaimsPrincipal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Models/Movie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AB1CA25A-5FB6-4BEE-A0AD-10A183B1358F/F/RazorPageOfT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/779D5A41-D8AF-4E9E-8CDF-C4E7EC3BEC94/1D/UserManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/AppUserManager/AppUserManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/wwwroot/lib/jquery/dist/jquery.min.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Shared/_MessagePanel.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/AppUserManager/IAppUserManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E05F410B-8FA6-4002-A205-C112930470CB/2/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Domain/Storage/LocalStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A5C32EB3-CFFA-4663-8622-BFBF4BEA2178/3/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Home/Delete.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestMovieSite/Views/Home/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Storages/Storage.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Storages/LocalStorage.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Storages/StorageFactory.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/ViewModels/MainViewModel.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/ViewModels/PageAnswerViewModel.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/OperationResult.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Storage/IStorage.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Helpers/OperationResult.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Helpers/OperationResultHelper.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Shared/Error.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/ViewModels/PageViewModel.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/ViewModels/BaseViewModel.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Controllers/MovieController.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Movie/Create.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Movie/Delete.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Movie/Edit.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Movie/Details.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Movie/Index.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/TagHelpers/PageLinkTagHelper.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Shared/_LoginPartial.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Services/IMovieService.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/UserCheker.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/UserChecker.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/UserChecker/IUserChecker.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/UserChecker/UserChecker.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/UserChecker/AppUserManager.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/AppUserManager/IUserChecker.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/AppUserManager/AppUserManager.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/AppUserManager/IAppUserManager.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Shared/_MessagePanel.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Storage/StorageFactory.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Models/Storage.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Controllers/File.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Services/FileService.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/appsettings.json" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Helpers/LocalStoragePathCombiner.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Storage/LocalStorage.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Models/File.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Domain/Models/Movie.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Home/Delete.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Home/Edit.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Home/Create.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Data/ApplicationDbContext.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/ViewModels/MovieViewModel.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Program.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Views/Home/Details.cshtml" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Startup.cs" />
+        <option value="$PROJECT_DIR$/TestMovieSite/Controllers/HomeController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1caUuGY1RDGTLbuCBy1fjPKBZID" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.TestMovieSite">
+    <configuration name="TestMovieSite" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TestMovieSite/TestMovieSite.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="TestMovieSite" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="TestMovieSite: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TestMovieSite/TestMovieSite.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1cf52ee-0513-4734-9e61-1c3ead1f84c0" name="Default Changelist" comment="" />
+      <created>1590766420422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590766420422</updated>
+      <workItem from="1590766431586" duration="164000" />
+      <workItem from="1590767180685" duration="358000" />
+      <workItem from="1590768513076" duration="811000" />
+      <workItem from="1590772197811" duration="62868000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="262" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590766506356">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="262" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590766506356" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1590852334614">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1590852334614" />
+    <state x="637" y="124" width="683" height="801" key="find.popup" timestamp="1590962856877">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="637" y="124" width="683" height="801" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590962856877" />
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1590960407879">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590960407879" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs" initialLine="22">
+            <startOffsets>
+              <option value="961" />
+            </startOffsets>
+            <endOffsets>
+              <option value="978" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TestMovieSite/Controllers/HomeController.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/TestMovieSite/Controllers/HomeController.cs" initialLine="15">
+            <startOffsets>
+              <option value="586" />
+            </startOffsets>
+            <endOffsets>
+              <option value="615" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TestMovieSite/TagHelpers/PageLinkTagHelper.cs</url>
+          <line>25</line>
+          <properties documentPath="$PROJECT_DIR$/TestMovieSite/TagHelpers/PageLinkTagHelper.cs" initialLine="25">
+            <startOffsets>
+              <option value="840" />
+            </startOffsets>
+            <endOffsets>
+              <option value="900" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs</url>
+          <line>155</line>
+          <properties documentPath="$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs" initialLine="129">
+            <startOffsets>
+              <option value="5526" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5691" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs</url>
+          <line>86</line>
+          <properties documentPath="$PROJECT_DIR$/TestMovieSite/Services/MovieService.cs" initialLine="79">
+            <startOffsets>
+              <option value="2986" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3008" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

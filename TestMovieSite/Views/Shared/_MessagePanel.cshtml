@@ -1,0 +1,14 @@
+﻿@model TestMovieSite.Views.ViewModels.BaseViewModel
+
+@if (Model.ShowMessage)
+{
+    <br />
+    <div class="col-md-offset-2 col-md-8">
+        <div class="panel panel-@(Model.IsSuccessMessage ? "success" : "danger")">
+            <div class="panel-body">
+                <h3 class="text-center text-@(Model.IsSuccessMessage ? "success" : "danger")">@(Model.IsSuccessMessage ? "Success" : "Error")! @Model.Message</h3>
+            </div>
+        </div>
+    </div>
+    <br />
+}
