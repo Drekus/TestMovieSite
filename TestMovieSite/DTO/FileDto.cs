@@ -2,7 +2,8 @@
 {
     public class FileDto
     {
-        public string Name { get; set; }
+        public string UniqueName { get; set; }
+        public string Extension { get; set; }
         public byte[] FileData { get; set; }
     }
 }

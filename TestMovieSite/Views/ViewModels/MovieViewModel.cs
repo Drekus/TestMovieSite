@@ -33,8 +33,9 @@ namespace TestMovieSite.Views.ViewModels
         
         [Display(Name = "Add a new poster")]
         [DataType(DataType.Upload)]
-        [FileExtensions(Extensions = "jpg,png,gif,jpeg,bmp,svg")]
         public IFormFile  NewPoster { get; set; }
+
+        public string ActionName { get; set; }
 
         public static MovieViewModel FromModel(Movie movie, bool? isCurrentUserDownloader = null)
         {

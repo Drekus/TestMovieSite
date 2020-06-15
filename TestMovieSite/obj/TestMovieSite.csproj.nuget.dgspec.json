@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programing\\TestMovieSite\\TestMovieSite\\TestMovieSite\\TestMovieSite.csproj": {}
+    "D:\\Programing\\TestMovieSite\\TestMovieSite-master\\TestMovieSite-master\\TestMovieSite\\TestMovieSite.csproj": {}
   },
   "projects": {
-    "D:\\Programing\\TestMovieSite\\TestMovieSite\\TestMovieSite\\TestMovieSite.csproj": {
+    "D:\\Programing\\TestMovieSite\\TestMovieSite-master\\TestMovieSite-master\\TestMovieSite\\TestMovieSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing\\TestMovieSite\\TestMovieSite\\TestMovieSite\\TestMovieSite.csproj",
+        "projectUniqueName": "D:\\Programing\\TestMovieSite\\TestMovieSite-master\\TestMovieSite-master\\TestMovieSite\\TestMovieSite.csproj",
         "projectName": "TestMovieSite",
-        "projectPath": "D:\\Programing\\TestMovieSite\\TestMovieSite\\TestMovieSite\\TestMovieSite.csproj",
+        "projectPath": "D:\\Programing\\TestMovieSite\\TestMovieSite-master\\TestMovieSite-master\\TestMovieSite\\TestMovieSite.csproj",
         "packagesPath": "C:\\Users\\gudon\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing\\TestMovieSite\\TestMovieSite\\TestMovieSite\\obj\\",
+        "outputPath": "D:\\Programing\\TestMovieSite\\TestMovieSite-master\\TestMovieSite-master\\TestMovieSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

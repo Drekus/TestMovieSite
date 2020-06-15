@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -62,19 +64,11 @@ namespace TestMovieSite.Services
 
         public async Task<OperationResult<Movie>> GetMovie(int id)
         {
-            try
-            {
-               var movie = await _db.Movies
-                    .Include(m => m.Downloader)
-                    .Include(m => m.Poster)
-                    .FirstOrDefaultAsync(m => m.Id == id);
-               return new OperationResult<Movie>(movie, isSuccess: true);
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, $"Failed to find the movie with id: {id}");
-                return new OperationResult<Movie>(data:null, isSuccess: false);
-            }
+            var movie = await _db.Movies
+                   .Include(m => m.Downloader)
+                   .Include(m => m.Poster)
+                   .FirstOrDefaultAsync(m => m.Id == id);
+            return new OperationResult<Movie>(movie, isSuccess: movie != null);
         }
         
         public async Task<OperationResult<Movie>> AddOrEditMovie(Movie movie, IFormFile newPoster, IdentityUser currentUser)
@@ -83,7 +77,7 @@ namespace TestMovieSite.Services
             {
                 if (newPoster != null)
                 {
-                    var result = await AddNewPoster(newPoster);
+                    var result = await AddNewFile(newPoster);
                     if (!result.IsSuccess)
                     {
                         return new OperationResult<Movie>(data:null, isSuccess: false);
@@ -112,7 +106,10 @@ namespace TestMovieSite.Services
 
                     if (newPoster != null)
                     {
-                        _db.Files.Remove(dbMovie.Poster);
+                        if (dbMovie.Poster != null)
+                        {
+                            _db.Files.Remove(dbMovie.Poster);
+                        }
                         dbMovie.Poster = movie.Poster;
                     }
                 }
@@ -142,11 +139,18 @@ namespace TestMovieSite.Services
             }
         }
 
-        private async Task<OperationResult<File>> AddNewPoster(IFormFile newPoster)
+        private async Task<OperationResult<File>> AddNewFile(IFormFile newFile)
         {
-            var fileDto = new FileDto { Name = newPoster.FileName };
-            using var binaryReader = new BinaryReader(newPoster.OpenReadStream());
-            fileDto.FileData = binaryReader.ReadBytes((int)newPoster.Length);
+            var fileDto = new FileDto 
+            { 
+                UniqueName = CalculateHash(newFile),
+                Extension = newFile.FileName.Split('.').Last(),
+            };
+            
+            using var stream = newFile.OpenReadStream();
+            using var binaryReader = new BinaryReader(stream);
+            fileDto.FileData = binaryReader.ReadBytes((int)newFile.Length);
+            
             var storage = await _storageFactory.GetDefaultStorage();
             var result = storage.TryUploadFile(fileDto);
             if (!result.IsSuccess)
@@ -155,13 +159,19 @@ namespace TestMovieSite.Services
             }
             var file = new File
             {
-                Name = newPoster.FileName,
+                Name = newFile.FileName,
                 Url = result.Data,
                 StorageId = storage.Id
             };
-            // await _db.Files.AddAsync(file);
-            // await _db.SaveChangesAsync();
             return new OperationResult<File>(data:file, isSuccess: true);
+        }
+
+        private static string CalculateHash(IFormFile file)
+        {
+            using var stream = file.OpenReadStream();
+            using var md5 = MD5.Create();
+            var hash = Convert.ToBase64String(md5.ComputeHash(stream)).Replace('/', '_');
+            return hash;
         }
     }
 }

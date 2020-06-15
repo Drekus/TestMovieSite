@@ -35,28 +35,16 @@ namespace TestMovieSite.Controllers
 
         [Authorize]
         [HttpGet]
-        public IActionResult Create()
+        [Route("[controller]/Create")]
+        [Route("[controller]/Edit/{id}")]
+        public async Task<IActionResult> CreateOrEdit(int? id = null)
         {
-            return View();
-        }
+            if(id == null)
+            {
+                return View(new MovieViewModel { ActionName = "Create"});
+            }
 
-        [Authorize]
-        [HttpPost]
-        public async Task<IActionResult> Create([FromForm] MovieViewModel newMovie)
-        {
-            var currentUser = await _userManager.GetUserAsync(User);
-            var result = await _movieService.AddOrEditMovie(newMovie.ToModel(), newMovie.NewPoster, currentUser);
-            if (result.IsSuccess)
-                return RedirectToAction("Details", new {id = result.Data.Id, showSuccessMessage = result.IsSuccess });
-            
-            return RedirectToAction("Index", new { pageNumber = 1, isSuccess = result.IsSuccess});
-        }
-
-        [Authorize]
-        [HttpGet]
-        public async Task<IActionResult> Edit(int id)
-        {
-            var result = await _movieService.GetMovie(id);
+            var result = await _movieService.GetMovie(id.Value);
             if (!result.IsSuccess)
             {
                 return RedirectToAction("Index", new {pageNumber = 1, isSuccess = result.IsSuccess});
@@ -67,23 +55,35 @@ namespace TestMovieSite.Controllers
             {
                 return Forbid();
             }
-            
-            return View(MovieViewModel.FromModel(movie));
+
+            var model = MovieViewModel.FromModel(movie);
+            model.ActionName = "Edit";
+            return View(model);
         }
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Edit([FromForm] MovieViewModel movieVm)
+        [Route("[controller]/Create")]
+        [Route("[controller]/Edit")]
+        public async Task<IActionResult> CreateOrEdit([FromForm] MovieViewModel movieVm)
         {
-            var movieRes = await _movieService.GetMovie(movieVm.Id);
-            if (!movieRes.IsSuccess)
+            if (!ModelState.IsValid)
             {
-                return RedirectToAction("Details", new {id = movieVm.Id, showSuccessMessage = false});
+                return BadRequest(ModelState);
             }
-            var movie = movieRes.Data;
-            if (!await _userManager.CheckEditPermissionAsync(User, movie))
+
+            if(movieVm.Id != 0)
             {
-                return Forbid();
+                var movieRes = await _movieService.GetMovie(movieVm.Id);
+                if (!movieRes.IsSuccess)
+                {
+                    return RedirectToAction("Details", new { id = movieVm.Id, showSuccessMessage = false });
+                }
+                var movie = movieRes.Data;
+                if (!await _userManager.CheckEditPermissionAsync(User, movie))
+                {
+                    return Forbid();
+                }
             }
             
             var currentUser = await _userManager.GetUserAsync(User);

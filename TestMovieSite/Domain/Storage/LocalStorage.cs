@@ -51,14 +51,19 @@ namespace TestMovieSite.Domain.Storage
                 {
                     Directory.CreateDirectory(storageDirectory);
                 }
-                var filePath = Path.Combine(storageDirectory, fileDto.Name);
-                //Что нужно улучшить: брать hash от содержимого файла вместо использования имени файла передаваемого с фронта
+                var filePath = Path.Combine(storageDirectory, fileDto.UniqueName);
                 //код для работы м директориями можно убрать заменив точным путем к хранилищу, но тогда для запуска на новой машине нужно было бы создававть вручную директории
-                
-                using var fStream = new FileStream(filePath, FileMode.OpenOrCreate);
+
+                var i = 1;
+                while(File.Exists($"{filePath}.{fileDto.Extension}"))
+                {
+                    filePath = filePath + i++;
+                }
+
+                using var fStream = new FileStream($"{filePath}.{fileDto.Extension}", FileMode.OpenOrCreate);
                 fStream.Write(fileDto.FileData, 0, fileDto.FileData.Length);
 
-                var relativePath = Path.Combine("\\",StoragePath, fileDto.Name);
+                var relativePath = Path.Combine("\\",StoragePath, $"{fileDto.UniqueName}.{fileDto.Extension}");
                 return new OperationResult<string>(data: relativePath, isSuccess: true);
                 
                 // Что нужно улучшить: 
